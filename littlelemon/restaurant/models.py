@@ -8,7 +8,7 @@ class Booking(models.Model):
     guests = models.SmallIntegerField()
 
     def __str__(self): 
-        return self.first_name
+        return self.name
 
 
 # Add code to create Menu model
@@ -18,4 +18,4 @@ class Menu(models.Model):
    inventory = models.SmallIntegerField() 
 
    def __str__(self):
-      return f'{self.title} : $str({self.price})'
+      return f'{self.title} : {self.price}'
